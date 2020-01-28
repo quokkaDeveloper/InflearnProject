@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  MiniBrowser
 //
-//  Created by 이규민 on 2020/01/28.
+//  Created by 이규민 on 2020/01/29.
 //  Copyright © 2020 quokka. All rights reserved.
 //
 

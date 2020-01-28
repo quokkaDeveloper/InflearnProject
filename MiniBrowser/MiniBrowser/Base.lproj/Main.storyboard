@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UhQ-TK-Phy">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -8,14 +8,14 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="KXn-Ns-KtJ">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MiniBrowser" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="UhQ-TK-Phy" customClass="ViewController" customModule="MiniBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tue-Ly-8gs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3Fd-ud-lu5">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XhS-sp-HwS">
                                 <rect key="frame" x="0.0" y="20" width="375" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
@@ -25,41 +25,41 @@
                                     <segment title="google"/>
                                 </segments>
                                 <connections>
-                                    <action selector="bookMarkAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="mTf-ok-BBV"/>
+                                    <action selector="bookMarkAction:" destination="UhQ-TK-Phy" eventType="valueChanged" id="QXe-gs-Zcu"/>
                                 </connections>
                             </segmentedControl>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uvw-Yr-R06">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jA1-TS-fNe">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PTJ-Z2-kng"/>
-                                    <barButtonItem systemItem="rewind" id="C7O-mX-wTh">
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mcD-VW-BIC"/>
+                                    <barButtonItem systemItem="rewind" id="2Dg-SM-ysa">
                                         <connections>
-                                            <action selector="goBackAction:" destination="BYZ-38-t0r" id="WBj-c3-HTw"/>
+                                            <action selector="goBackAction:" destination="UhQ-TK-Phy" id="PgF-iL-2K9"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="boF-1G-eSf"/>
-                                    <barButtonItem systemItem="fastForward" id="iHs-BE-7YX">
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="tXP-dH-sfA"/>
+                                    <barButtonItem systemItem="fastForward" id="eqC-oA-GIv">
                                         <connections>
-                                            <action selector="goForwardAction:" destination="BYZ-38-t0r" id="SVe-qV-TlO"/>
+                                            <action selector="goForwardAction:" destination="UhQ-TK-Phy" id="Uyi-kj-hTc"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="3x6-ke-3XF"/>
-                                    <barButtonItem systemItem="stop" id="UDV-ME-XTY">
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ypV-UJ-Emt"/>
+                                    <barButtonItem systemItem="stop" id="OKS-7b-bYg">
                                         <connections>
-                                            <action selector="stopLoadingAction:" destination="BYZ-38-t0r" id="ncj-UF-YRe"/>
+                                            <action selector="stopLoadingAction:" destination="UhQ-TK-Phy" id="V12-xO-8Ss"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lum-O7-Xtq"/>
-                                    <barButtonItem systemItem="refresh" id="IUB-lf-jtS">
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="m20-fk-CDl"/>
+                                    <barButtonItem systemItem="refresh" id="4nA-SV-MUT">
                                         <connections>
-                                            <action selector="reloadAction:" destination="BYZ-38-t0r" id="Zyk-Ed-ggK"/>
+                                            <action selector="reloadAction:" destination="UhQ-TK-Phy" id="Fa2-r9-zBX"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="blO-15-uai"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="SOB-KH-RvC"/>
                                 </items>
                             </toolbar>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fxD-en-563">
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W4U-O2-IWV">
                                 <rect key="frame" x="0.0" y="83" width="375" height="540"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -68,32 +68,32 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Qsr-GC-M6X">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="YZe-bT-aKo">
                                 <rect key="frame" x="177" y="342" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="color" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kXu-Tp-3Xd">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i84-UR-FJf">
                                 <rect key="frame" x="0.0" y="48" width="375" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go"/>
                                 <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="X7G-ZC-J0r"/>
+                                    <outlet property="delegate" destination="UhQ-TK-Phy" id="Ls4-6P-Fjz"/>
                                 </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="b9u-Cz-98u"/>
                     </view>
                     <connections>
-                        <outlet property="bookMarkSegmentedControl" destination="3Fd-ud-lu5" id="VP9-ry-UXJ"/>
-                        <outlet property="mainWebView" destination="fxD-en-563" id="TcC-Uc-aAY"/>
-                        <outlet property="spinActivity" destination="Qsr-GC-M6X" id="iHW-D2-B8r"/>
-                        <outlet property="urlTextField" destination="kXu-Tp-3Xd" id="fuy-Zi-Jfu"/>
+                        <outlet property="bookMarkSegmentedControl" destination="XhS-sp-HwS" id="lQy-kd-Sg1"/>
+                        <outlet property="mainWebView" destination="W4U-O2-IWV" id="GrK-yZ-KX0"/>
+                        <outlet property="spinActivity" destination="YZe-bT-aKo" id="2aL-bz-ZdO"/>
+                        <outlet property="urlTextField" destination="i84-UR-FJf" id="WkD-7X-VIU"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Am-On-De3" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="79.200000000000003" y="134.48275862068968"/>
         </scene>
