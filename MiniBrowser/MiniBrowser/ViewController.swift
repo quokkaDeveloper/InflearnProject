@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  MiniBrowser
-//
-//  Created by 이규민 on 2020/01/29.
-//  Copyright © 2020 quokka. All rights reserved.
-//
-
 import UIKit
 import WebKit
 
